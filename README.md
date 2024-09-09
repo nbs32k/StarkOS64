@@ -4,6 +4,16 @@ An x86 64-bit operating system designed by researching NT's kernel and therefore
 The kernel and the disk driver are loaded by a custom 32-bit bootloader called NT loader that is able to manage memory and switch modes.\
 All components are fully compatible with MSVC compiler and NASM.
 
+#### Features
+* User interface
+* Device drivers (i8042prt)
+* Synchronous I/O system
+* Userland
+* Preemptive multitasking
+
+StarkOS`s main goal is to understand NTs internals and provide semi-compatible abstraction with PE executables.\
+StarkOS is trying to mimic most Windows features and do it as accurate as possible by clean room reverse engineering.
+
 #### Memory layout
 ```
 0xffff800000000000 - 0xffff8??????????? Mirror mapped free memory
@@ -14,5 +24,9 @@ All components are fully compatible with MSVC compiler and NASM.
 0xfffffc0000000000 - 0xfffffd0000000000 Paged pool area
 0xffffff0000000000 - 0xffffff0000001000 System's page directory
 ```
+
+
+https://github.com/user-attachments/assets/14e782c5-c44c-497a-8cac-1565da15eacf
+
 
 ![image](https://github.com/user-attachments/assets/940dd192-25e3-41ad-bf78-56836d364345)
