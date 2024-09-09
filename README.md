@@ -25,7 +25,7 @@ StarkOS is trying to mimic most Windows features and do it as accurate as possib
 0xffffff0000000000 - 0xffffff0000001000 System's page directory
 ```
 
-
+#### Dummy Graphical Interface
 https://github.com/user-attachments/assets/14e782c5-c44c-497a-8cac-1565da15eacf
 
 
